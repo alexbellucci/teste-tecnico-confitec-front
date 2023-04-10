@@ -7,27 +7,23 @@ import { User } from './user.model'
   providedIn: 'root'
 })
 export class UserService {
-  private readonly API_URL = 'https://my-api.com/users';
+  private readonly API_URL = 'https://localhost.com:44387/Usuario';
 
   constructor(private http: HttpClient) {}
 
-  create(user: User): Observable<User> {
+  Create(user: User): Observable<User> {
     return this.http.post<User>(this.API_URL, user);
   }
 
-  getUsers(): Observable<User[]> {
+  GetUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.API_URL);
   }
 
-  read(id: number): Observable<User> {
+  GetById(id: number): Observable<User> {
     return this.http.get<User>(`${this.API_URL}/${id}`);
   }
 
-  update(user: User): Observable<User> {
+  Update(user: User): Observable<User> {
     return this.http.put<User>(`${this.API_URL}/${user.id}`, user);
-  }
-
-  delete(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.API_URL}/${id}`);
   }
 }

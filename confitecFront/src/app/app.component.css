@@ -1,0 +1,102 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .btn-refresh {
+    background-color: #f6c325;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .btn-add {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .btn-blue {
+    background-color: #2c7bb6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-gray {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .table-users {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table-users th,
+  .table-users td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table-users th {
+    background-color: #2c7bb6;
+    color: #fff;
+  }
+  
+  .table-users tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table-users tr:hover {
+    background-color: #ddd;
+  }
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 24px;
+    }
+    
+    .btn-refresh {
+      font-size: 14px;
+      padding: 8px 16px;
+      margin-bottom: 10px;
+    }
+    
+    .btn-blue,
+    .btn-gray {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    
+    .table-users th,
+    .table-users td {
+      padding: 6px;
+      font-size: 14px;
+    }
+  }

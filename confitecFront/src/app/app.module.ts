@@ -3,18 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserListComponent } from './user-list/user-list.component';
-import { UserFormComponent } from './user-form/user-form.component';
-import { UserDetailComponent } from './user-detail/user-detail.component';
-import { UserEditComponent } from './user-edit/user-edit.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { EditarUsuarioComponent } from './edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserListComponent,
-    UserFormComponent,
-    UserDetailComponent,
-    UserEditComponent
+    AddUserComponent,
+    EditarUsuarioComponent
   ],
   imports: [
     BrowserModule,
